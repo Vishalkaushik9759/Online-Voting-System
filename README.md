@@ -192,7 +192,27 @@ Prerequisites:
 
 1. Start MongoDB.
 
-2. Configure and run backend:
+2. Install dependencies for all services:
+
+```bash
+npm run install:all
+```
+
+3. Start the full app from the root folder:
+
+```bash
+npm start
+```
+
+This starts `backend`, `otp-service`, and `frontend` together. To start only the backend and frontend, run:
+
+```bash
+npm run start:core
+```
+
+Manual service commands are also available:
+
+Backend:
 
 ```bash
 cd backend
@@ -201,7 +221,7 @@ npm install
 npm start
 ```
 
-3. Configure and run OTP service:
+OTP service:
 
 ```bash
 cd otp-service
@@ -212,7 +232,7 @@ npm start
 
 With `DEV_MODE=true`, OTPs are printed to the console instead of being emailed.
 
-4. Configure and run frontend:
+Frontend:
 
 ```bash
 cd frontend

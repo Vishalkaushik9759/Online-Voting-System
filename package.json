@@ -1,0 +1,11 @@
+{
+  "name": "secure-vote-mern",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/start-all.js",
+    "start:all": "node scripts/start-all.js",
+    "start:core": "node scripts/start-all.js --core",
+    "install:all": "node scripts/install-all.js"
+  }
+}
